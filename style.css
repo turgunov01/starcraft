@@ -315,6 +315,82 @@ main header img {
 .groupName-input {
   width: 100%;
   font-size: 15px;
-  line-height: 17px;
+  line-height: 150%;
   font-weight: 400;
+  background: unset;
+  border: none;
+  border-bottom: 1px solid rgb(79, 79, 79);
+  outline: none;
+}
+
+.groupName-input:focus {
+  border-color: black;
+}
+
+.groupName-input::placeholder {
+  font-size: 12px;
+}
+
+.winner .groupName-input {
+  color: white;
+  background: inherit;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.winner .groupName-input::placeholder {
+  color: white;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.dropdown img {
+  background: black;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  cursor: pointer;
+  filter: invert(50);
+}
+
+.hidden-group {
+  width: 50px;
+  height: 50px;
+}
+
+/* Team Row block relating on absolute dropdown */
+
+.team-logo {
+  cursor: pointer;
+}
+
+.team.row:hover {
+  overflow: visible;
+}
+
+.team.row {
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  bottom: -200%;
+  z-index: 999999;
+}
+
+/* Animation of opening dropdown */
+
+@keyframes heightUpDown {
+  0% {
+    height: 0%;
+    display: none;
+  }
+
+  100% {
+    height: 100%;
+    display: block;
+  }
 }
