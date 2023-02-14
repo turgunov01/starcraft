@@ -14,6 +14,60 @@
 
 
     <main class="main">
+        <!-- Absoluted Box flying over screen ( might be ) -->
+        <div class="third-box">
+            <p class="third-box-title title">3rd Place</p>
+            <div class="teams">
+                <div class="round">
+                    <div class="team row">
+                        <img class="team-logo" src="/images/serral.svg" alt="">
+                        <div class="dropdown">
+                            <div class="hidden-group">
+                                <img class="hidden" src="/images/rogue.svg" alt="">
+                            </div>
+                            <div class="hidden-group">
+                                <img class="hidden" src="/images/maru.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-name">
+                            <input type="text" class="groupName-input" placeholder="Enter name of the group...">
+                        </div>
+                    </div>
+                    <div class="team row">
+                        <img class="team-logo" src="/images/serral.svg" alt="">
+                        <div class="dropdown">
+                            <div class="hidden-group">
+                                <img class="hidden" src="/images/rogue.svg" alt="">
+                            </div>
+                            <div class="hidden-group">
+                                <img class="hidden" src="/images/maru.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-name">
+                            <input type="text" class="groupName-input" placeholder="Enter name of the group...">
+                        </div>
+                    </div>
+                </div>
+                <div class="round-connecter"></div>
+                <div class="round round2">
+                    <div class="team row">
+                        <img class="team-logo" src="/images/serral.svg" alt="">
+                        <div class="dropdown">
+                            <div class="hidden-group">
+                                <img class="hidden" src="/images/rogue.svg" alt="">
+                            </div>
+                            <div class="hidden-group">
+                                <img class="hidden" src="/images/maru.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-name">
+                            <input type="text" class="groupName-input" placeholder="Enter name of the group...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Absoluted Box flying over screen ( might be ) -->
         <header>
             <img src="/images/frakcium.svg" alt="frakcium logo">
             <img src="/images/starcraft.svg" alt="starcraft logo">
@@ -268,9 +322,15 @@
         <div class="sponsors">
             <p>our sponsors</p>
             <div class="container col">
-                <img src="/images/intel.svg" alt="intel logo">
-                <img src="/images/benq.svg" alt="benq logo">
-                <img src="/images/hyperx.svg" alt="hyperx logo">
+                <label title="Image here" class="custom-label" for="custom-field">
+                    <output class="output-image">
+                        <img src="/images/reset.png" class="custom-label-reset" alt="">
+                    </output>
+                    <div class="sponsor-box">
+                        <img src="../images/upload.png" alt="">
+                    </div>
+                </label>
+                <input id="custom-field" accept="image/jpeg, image/png, image/jpg" type="file" class="sponsors-image">
             </div>
         </div>
         <div class="socials">
@@ -284,6 +344,14 @@
         </div>
     </aside>
 
+    <style scoped>
+        .sidebar .container {
+            max-width: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <script src="../library/main.js"></script>
 </body>
 
 </html>
